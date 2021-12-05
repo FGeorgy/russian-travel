@@ -1,0 +1,57 @@
+.cover__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 740px;
+  background-image: url(/images/background_trains.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+@media screen and (max-width: 1280px) {
+  .cover__link {
+    height: 640px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .cover__link {
+    height: 480px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cover__link {
+    height: 200px;
+  }
+}
+
+.cover__link::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #2A2C2F;
+  opacity: .3;
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.cover__link:hover::before {
+  opacity: .8;
+}
