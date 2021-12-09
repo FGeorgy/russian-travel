@@ -15,9 +15,10 @@
 @media screen and (max-width: 767px) {
   .place__paragraph {
     margin-left: 16px;
+    margin-right: 16px;
   }
 }
 
 .place__paragraph:last-of-type {
-  margin: 0;
+  margin-bottom: 0;
 }
